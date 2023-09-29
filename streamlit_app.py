@@ -9,9 +9,9 @@ openai.api_key = st.secrets["openai"]
 context= "Evaluate this discussion between a sales person and a customer." 
 context+="evaluate if a sales person arguments for a sell are convincing or not."
 context+="please evaluate as regard following factors: "
-context+="Clarity and Relevance,Credibility,Benefits and Value,Objection Handling,Emotional Appeal,Call to Action,Listening Skills,Comparison and Differentiation,Customer Feedback"
+context+="Clarity and Relevance,Credibility,Benefits and Value,Objection Handling,Emotional Appeal,Call to Action,Listening Skills,Comparison and Differentiation"
 
-context+="Please provide a rating for the sales person per factor and a global rating"
+context+="Please provide a rating for the sales person per factor and a global rating. Please provide the results as a table"
                 
 messages = [{"role": "system", "content": context}]
 
