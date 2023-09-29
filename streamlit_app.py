@@ -17,7 +17,7 @@ messages = [{"role": "system", "content": context}]
 
 with st.form("input form"):
     st.write("<h3>Enter the discussion between sales and customer ✨</h3>", unsafe_allow_html=True)
-    discussion = st.text_area("Enter the discussion text:")
+    discussion = st.text_area("Enter the discussion text:",height=100)
 
     if st.form_submit_button("Evaluate"):
         if discussion is not None:
