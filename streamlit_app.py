@@ -33,7 +33,7 @@ with st.form("input form"):
         
             for response in openai.ChatCompletion.create(
                 model=st.session_state["openai_model"],
-                messages=conversation,
+                messages=st.session_state.messages,
                 stream=True,
             ):
                 full_response += response.choices[0].delta.get("content", "")
