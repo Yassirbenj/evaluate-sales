@@ -6,18 +6,10 @@ st.title("Customer simulator")
 openai.api_key = st.secrets["openai"]
 
 #context of the discussion
-context= "Evaluate this discussion between a sales person and a customer. 
-            evaluate if a sales person arguments for a sell are convincing or not.
-            please evaluate as regard following factors: 
-                Clarity and Relevance,
-                Credibility,
-                Benefits and Value,
-                Objection Handling,
-                Emotional Appeal,
-                Call to Action,
-                Listening Skills,
-                Comparison and Differentiation,
-                Customer Feedback"
+context= "Evaluate this discussion between a sales person and a customer." 
+context+="evaluate if a sales person arguments for a sell are convincing or not."
+context+="please evaluate as regard following factors: "
+context+="Clarity and Relevance,Credibility,Benefits and Value,Objection Handling,Emotional Appeal,Call to Action,Listening Skills,Comparison and Differentiation,Customer Feedback"
                 
 messages = [{"role": "system", "content": context}]
 
