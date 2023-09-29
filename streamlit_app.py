@@ -11,7 +11,7 @@ context+="evaluate if a sales person arguments for a sell are convincing or not.
 context+="please evaluate as regard following factors: "
 context+="Clarity and Relevance,Credibility,Benefits and Value,Objection Handling,Emotional Appeal,Call to Action,Listening Skills,Comparison and Differentiation,Customer Feedback"
 
-context+="Please provide a rating per factor and a global rating"
+context+="Please provide a rating for the sales person per factor and a global rating"
                 
 messages = [{"role": "system", "content": context}]
 
